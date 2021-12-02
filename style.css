@@ -21,6 +21,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+  grid-template-rows: repeat(5, auto);
   gap: 4rem 20px;
 }
 main section {
@@ -89,6 +90,16 @@ h3 {
   color: #fce8bd;
   line-height: 1.125;
 }
+h4 {
+  font-family: "minerva-modern", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #561130;
+  line-height: 1.125;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  font-variant-caps: petite-caps;
+}
 
 p {
   font-family: "letter-gothic-std", "Times New Roman";
@@ -101,7 +112,7 @@ p {
 
 #first_section {
   grid-column: 1/-1;
-  background-image: url(billeder/splash.png);
+  background-image: url(billeder/splash.webp);
   opacity: 0.85;
   width: 100%;
   height: 100vh;
@@ -127,6 +138,16 @@ p {
 }
 
 #second_section .section_wrapper video {
+  width: 100%;
+}
+
+#fourh_section .section_wrapper {
+  grid-row: 4/5;
+  aspect-ratio: 16/9;
+}
+
+#fourh_section .section_wrapper iframe {
+  height: 100%;
   width: 100%;
 }
 /*desktop*/
